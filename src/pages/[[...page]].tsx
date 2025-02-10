@@ -51,6 +51,7 @@ export async function getStaticPaths() {
 
 // Define the Page component
 export default function Page({ page }: { page: BuilderContent | null }) {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
   const router = useRouter();
   const isPreviewing = useIsPreviewing();
 
