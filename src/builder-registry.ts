@@ -1,5 +1,4 @@
 // builder-registry.ts
-import { Builder } from '@builder.io/react';
 import dynamic from 'next/dynamic';
 
 Builder.registerComponent(
