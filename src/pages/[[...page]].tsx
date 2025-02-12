@@ -6,10 +6,9 @@ import { BuilderContent } from "@builder.io/sdk";
 import DefaultErrorPage from "next/error";
 import Head from "next/head";
 import { GetStaticProps } from "next";
-import dynamic from "next/dynamic";
-import React, { useEffect } from 'react';
-import GLightbox from 'glightbox';
 
+// Import the builder-registry
+import '../builder-registry';
 
 // Replace with your Public API Key
 builder.init("30619dff96084a2f9b8d7c502a4a9081");
@@ -52,31 +51,6 @@ export async function getStaticPaths() {
     fallback: 'blocking',
   };
 }
-
-// custom builder components
-// GLIGHTBOX COMP: added 02/12/2025 5pm
-const LightboxComponent = () => {
-  useEffect(() => {
-    const lightbox = GLightbox({
-      selector: '.glightbox'
-    });
-    
-    return () => {
-      lightbox.destroy();
-    };
-  }, []);
-
-  return (
-    <div>
-      <a href="image.jpg" className="glightbox">
-        <img src="image-thumbnail.jpg" alt="Image" />
-      </a>
-    </div>
-  );
-};
-
-export default LightboxComponent;
-// GLIGHTBOX COMP: end custom component
 
 // Define the Page component
 export default function Page({ page }: { page: BuilderContent | null }) {
