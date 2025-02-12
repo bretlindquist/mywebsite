@@ -1,5 +1,5 @@
 // pages/[[...page.tsx]]
-// import React from "react";
+import React from "react";
 import { useRouter } from "next/router";
 import { BuilderComponent, builder, useIsPreviewing } from "@builder.io/react";
 import { BuilderContent } from "@builder.io/sdk";
