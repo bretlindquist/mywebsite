@@ -6,6 +6,7 @@ import { BuilderContent } from "@builder.io/sdk";
 import DefaultErrorPage from "next/error";
 import Head from "next/head";
 import { GetStaticProps } from "next";
+import dynamic from "next/dynamic";
 
 // Replace with your Public API Key
 builder.init("30619dff96084a2f9b8d7c502a4a9081");
