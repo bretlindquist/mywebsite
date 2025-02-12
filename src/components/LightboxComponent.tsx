@@ -49,3 +49,4 @@ const LightboxComponent: React.FC<LightboxComponentProps> = ({ imageUrl, thumbna
 };
 
 export default LightboxComponent;
+
