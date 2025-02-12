@@ -1,5 +1,5 @@
 // components/LightboxComponent.tsx
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import GLightbox from 'glightbox';
 
 const LightboxComponent = ({ imageUrl, thumbnailUrl, alt }) => {
